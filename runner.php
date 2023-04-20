@@ -4,7 +4,7 @@ chdir(dirname(__FILE__));
 if( php_sapi_name() !== 'cli' ){die();}
 //endRemoveIf(development)
 
-require_once "config.php";
+require_once('config.php');
 
 $last_tweet = file_get_contents($config["last_tweet_file_location"]);
 
